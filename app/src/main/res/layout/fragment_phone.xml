@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.todoapp.model.Phone" />
+
+        <variable
+            name="viewmodel"
+            type="com.example.todoapp.viewmodel.PhoneViewModel"/>
+
+        <variable
+            name="handler"
+            type="com.example.todoapp.view.listeners.PhoneHandler" />
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/back_icon_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:text="PHONE VERIFICATION"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="MissingClass">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:padding="7px"
+            android:text="Enter Your Phone number"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/msisdnEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito"
+                android:hint="Mobile Number"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/continuebutton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/white"-->
+<!--                android:fontFamily="@font/nunito"-->
+<!--                android:text="CONTINUE"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:backgroundTint="@color/orangeColorSafeBoda"-->
+<!--                app:cornerRadius="25dp"-->
+<!--                tools:ignore="RtlCompat" />-->
+
+            <com.kusu.loadingbutton.LoadingButton
+                android:id="@+id/continuebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="CONTINUE"
+                android:textColor="@color/white"
+                app:lb_buttonColor="@color/orangeColorSafeBoda"
+                app:lb_isShadowEnable="true"
+                app:lb_isCircular="false"
+                app:lb_loaderColor="@color/white"
+                app:lb_shadowColor="@color/orangeColorSafeBoda"
+                app:lb_shadowHeight="5dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

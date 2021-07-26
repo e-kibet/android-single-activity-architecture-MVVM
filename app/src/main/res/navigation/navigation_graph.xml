@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_welcome">
+
+    <fragment
+        android:id="@+id/fragment_welcome"
+        android:name="com.example.todoapp.view.fragments.WelcomeFragment"
+        android:label="LOGIN"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/fragment_phone"
+            app:destination="@id/fragment_phone"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_phone"
+        android:name="com.example.todoapp.view.fragments.PhoneFragment"
+        android:label="LOGIN"
+        tools:layout="@layout/fragment_phone">
+        <action
+            android:id="@+id/fragment_home"
+            app:destination="@id/fragment_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.todoapp.view.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentForget"
+        android:name="com.example.todoapp.view.fragments.ForgetFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_forget">
+    </fragment>
+
+</navigation>
