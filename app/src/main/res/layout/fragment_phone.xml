@@ -94,19 +94,6 @@
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content">
 
-<!--            <com.google.android.material.button.MaterialButton-->
-<!--                android:id="@+id/continuebutton"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@color/white"-->
-<!--                android:fontFamily="@font/nunito"-->
-<!--                android:text="CONTINUE"-->
-<!--                android:textAlignment="center"-->
-<!--                android:textColor="@color/white"-->
-<!--                app:backgroundTint="@color/orangeColorSafeBoda"-->
-<!--                app:cornerRadius="25dp"-->
-<!--                tools:ignore="RtlCompat" />-->
-
             <com.kusu.loadingbutton.LoadingButton
                 android:id="@+id/continuebutton"
                 android:layout_width="match_parent"
@@ -123,6 +110,12 @@
                 app:lb_shadowColor="@color/orangeColorSafeBoda"
                 app:lb_shadowHeight="5dp" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/diplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
 
 
     </LinearLayout>

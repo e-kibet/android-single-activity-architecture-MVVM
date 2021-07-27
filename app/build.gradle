@@ -83,6 +83,10 @@ dependencies {
 
     implementation 'com.github.koushikcse:LoadingButton:1.7'
 
+    //timber logging
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+
 
 
 
